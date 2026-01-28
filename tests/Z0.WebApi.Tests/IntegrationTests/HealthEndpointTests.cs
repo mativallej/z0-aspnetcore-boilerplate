@@ -45,20 +45,10 @@ public class HealthEndpointTests : IClassFixture<WebApplicationFactoryFixture>
     }
 
     [Fact]
-    public async Task ProductsEndpoint_WithoutAuth_ShouldReturnUnauthorized()
+    public async Task ItemsEndpoint_WithoutAuth_ShouldReturnUnauthorized()
     {
         // Act
-        var response = await _client.GetAsync("/api/v1/products");
-
-        // Assert
-        response.StatusCode.Should().Be(HttpStatusCode.Unauthorized);
-    }
-
-    [Fact]
-    public async Task CategoriesEndpoint_WithoutAuth_ShouldReturnUnauthorized()
-    {
-        // Act
-        var response = await _client.GetAsync("/api/v1/categories");
+        var response = await _client.GetAsync("/api/v1/items");
 
         // Assert
         response.StatusCode.Should().Be(HttpStatusCode.Unauthorized);
