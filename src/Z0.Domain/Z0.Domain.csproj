@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Z0.Domain</RootNamespace>
+  </PropertyGroup>
+
+</Project>
